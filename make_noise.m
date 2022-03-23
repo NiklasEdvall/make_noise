@@ -4,8 +4,6 @@ fs = 44100; %Set samplerate
 duration = 5*60;    %Noise duration (sec)
 lowpassf = 18000;        %lowpassfilter frequency
 
-dt = 1/fs;          % length of sample
-
 %Create and normalize noise vector
 noise = rand(1, round(duration*fs));
 noise = (noise - 0.5) * 2;
